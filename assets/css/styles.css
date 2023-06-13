@@ -239,9 +239,6 @@ body.light-theme {
 /*=============== HEADER & NAV===============*/
 .header {
   position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   top: 0;
   left: 0;
@@ -250,6 +247,7 @@ body.light-theme {
   z-index: var(--z-fixed);
   transition: 0.4s; /* for light mode animation*/
   height: 3rem;
+  padding: 0.75rem;
 }
 
 .nav {
