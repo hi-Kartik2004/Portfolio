@@ -3,7 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
+  --header-height: 4.5rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -239,19 +239,26 @@ body.light-theme {
 /*=============== HEADER & NAV===============*/
 .header {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   top: 0;
   left: 0;
   width: 100%;
   background-color: var(--body-color);
   z-index: var(--z-fixed);
   transition: 0.4s; /* for light mode animation*/
+  height: 3rem;
 }
 
 .nav {
-  height: var(--header-height);
+  max-height: var(--header-height);
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .nav__logo {
